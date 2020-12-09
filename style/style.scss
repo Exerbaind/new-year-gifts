@@ -103,6 +103,8 @@ html {
       .catalog__item {
         flex: 1;
         // width: 33%;
+        display: flex;
+        justify-content: center;
         margin: 10px;
         border-radius: 10px;
         overflow: hidden;
@@ -113,14 +115,14 @@ html {
           box-shadow: 0px 0px 10px 5px rgba($color: $cBeigeDark, $alpha: 0.7);
         }
         .item__img {
-          width: 100%;
-          max-height: 200px;
+          width: 50%;
+          max-height: 500px;
           @media screen and (max-width: 850px) {
             max-height: none;
           }
         }
         .item__flex-container {
-          padding: 10px;
+          padding: 20px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -132,6 +134,7 @@ html {
             }
             .item__description {
               margin-top: 10px;
+              text-align: justify;
             }
           }
           .item__buy {
