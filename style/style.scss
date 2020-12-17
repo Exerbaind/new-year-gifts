@@ -141,7 +141,9 @@ html {
             max-height: 470px;
           }
           @media screen and (max-width: 550px) {
-            width: 100%;
+            width: 1px;
+            min-width: 100%;
+            *width: 100%;
           }
           .item__img {
             width: 100%;

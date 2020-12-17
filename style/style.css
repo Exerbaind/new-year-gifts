@@ -217,7 +217,9 @@ html {
 
 @media screen and (max-width: 550px) {
   .wrapper .catalog .catalog__list .catalog__item .item__img-block {
-    width: 100%;
+    width: 1px;
+    min-width: 100%;
+    *width: 100%;
   }
 }
 
