@@ -67,6 +67,12 @@ html {
   width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .wrapper .intro:after {
+    height: 100vh;
+  }
+}
+
 .wrapper .intro .intro__title {
   z-index: 5;
   font-family: "Pacifico", cursive;
