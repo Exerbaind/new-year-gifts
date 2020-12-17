@@ -103,15 +103,15 @@ html {
       margin-top: 40px;
       width: 100%;
       flex-wrap: wrap;
-      @media screen and (max-width: 850px) {
-        flex-direction: column;
-      }
+      // @media screen and (max-width: 850px) {
+      //   flex-direction: column;
+      //   width: 100vw;
+      // }
       @media screen and (max-width: 550px) {
         margin-top: 20px;
       }
       .catalog__item {
         flex: 1;
-        // width: 33%;
         display: flex;
         justify-content: center;
         margin: 10px;
@@ -119,28 +119,44 @@ html {
         overflow: hidden;
         box-shadow: 0px 0px 10px 0px rgba($color: $cBeigeDark, $alpha: 0.7);
         transition: 0.3s;
-        &:hover {
-          transform: scale(1.02);
-          box-shadow: 0px 0px 10px 5px rgba($color: $cBeigeDark, $alpha: 0.7);
+        @media screen and (min-width: 500px) {
+          &:hover {
+            transform: scale(1.02);
+            box-shadow: 0px 0px 10px 5px rgba($color: $cBeigeDark, $alpha: 0.7);
+          }
         }
+        @media screen and (max-width: 1200px) {
+          width: 95%;
+          flex: none;
+        }
+
         @media screen and (max-width: 550px) {
           flex-direction: column;
         }
-        .item__img {
+        .item__img-block {
           width: 50%;
           max-height: 500px;
-          @media screen and (max-width: 850px) {
-            max-height: none;
+          overflow: hidden;
+          @media screen and (max-width: 1200px) {
+            max-height: 400px;
           }
           @media screen and (max-width: 550px) {
             width: 100%;
           }
+          .item__img {
+            width: 100%;
+          }
         }
+
         .item__flex-container {
           padding: 20px;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
+          width: 50%;
+          @media screen and (max-width: 550px) {
+            width: 100%;
+          }
           .item__info {
             .item__name {
               color: $cBeigeDark;
@@ -174,6 +190,29 @@ html {
         }
       }
     }
+  }
+}
+
+.slick-next {
+  right: 0px;
+  height: 50px;
+  width: 50px;
+  &:before {
+    color: #cbba83;
+    opacity: 1;
+    font-size: 26px;
+  }
+}
+
+.slick-prev {
+  left: 0px;
+  height: 50px;
+  width: 50px;
+  z-index: 1;
+  &:before {
+    color: #cbba83;
+    opacity: 1;
+    font-size: 26px;
   }
 }
 

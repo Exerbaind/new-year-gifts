@@ -12,6 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="./style/style.css" />
@@ -32,7 +34,12 @@
         <h2 class="catalog__title">Каталог подарков</h2>
         <div class="catalog__list">
           <div class="catalog__item">
-            <img src="./assets/first_gift.JPG" alt="" class="item__img" />
+            <div class="item__img-block">
+              <img src="./assets/5.JPG" alt="" class="item__img" />
+              <img src="./assets/6.JPG" alt="" class="item__img" />
+              <img src="./assets/3.JPG" alt="" class="item__img" />
+              <img src="./assets/2.JPG" alt="" class="item__img" />
+            </div>
             <div class="item__flex-container">
               <div class="item__info">
                 <h4 class="item__name">Название подарка</h4>
@@ -48,7 +55,12 @@
             </div>
           </div>
           <div class="catalog__item">
-            <img src="./assets/second_gift.JPG" alt="" class="item__img" />
+            <div class="item__img-block">
+              <img src="./assets/1.JPG" alt="" class="item__img" />
+              <img src="./assets/2.JPG" alt="" class="item__img" />
+              <img src="./assets/3.JPG" alt="" class="item__img" />
+              <img src="./assets/4.JPG" alt="" class="item__img" />
+            </div>
             <div class="item__flex-container">
               <div class="item__info">
                 <h4 class="item__name">Название подарка</h4>
@@ -66,5 +78,23 @@
         </div>
       </section>
     </div>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".item__img-block").slick({
+          arrows: true,
+          autoplay: true,
+        });
+      });
+    </script>
   </body>
 </html>
