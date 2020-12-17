@@ -50,8 +50,9 @@ html {
 
 @media screen and (max-width: 1200px) {
   .wrapper .intro {
-    width: 100%;
+    width: 100vw;
     padding: 0 10px;
+    background-size: auto;
   }
 }
 

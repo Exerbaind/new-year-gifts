@@ -30,8 +30,9 @@ html {
     flex-direction: column;
     text-align: center;
     @media screen and (max-width: 1200px) {
-      width: 100%;
+      width: 100vw;
       padding: 0 10px;
+      background-size: auto;
     }
     &:after {
       content: "";
